@@ -1,0 +1,53 @@
+nav h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+#info #inputs {
+  width: 25%;
+  height: 400px;
+  text-align: center;
+}
+#info #inputs input {
+  margin: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  outline: none;
+  width: 250px;
+}
+#info #rows {
+  width: 70%;
+  height: 600px;
+}
+
+@media screen and (max-width: 950px) {
+  #info {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #info #inputs {
+    width: 100%;
+  }
+  #info #inputs input {
+    width: 40%;
+  }
+  #info #inputs button {
+    width: 50%;
+  }
+  #info #rows {
+    width: 100%;
+  }
+  #info #rows table {
+    width: 100%;
+  }
+}
